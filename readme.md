@@ -5,4 +5,10 @@ JENKINS AS PIPELINE
 
 2. Install Jenkins (dekstop or in container) and go to manage plugins and install 'Blue Ocean'
 
-3. 
+3. Activate Blue Ocen for left menu and create new pipeline, choose Github as repository for code
+
+4. Go to Settings -> developer settings on Github and create an access token and paste it in Jenkins when ask for it. then choose the repository
+
+5. Create some dummy stages with steps of type 'print message' and save it. It will as you to save pipeline in the github repository.
+
+6. Pipeline will run and then if you go to github you will see the Jenkinsfile automatically created!!
