@@ -1,8 +1,5 @@
 pipeline {
   agent any
-  environment {
-    chromeDriverPath = '/Users/jorge.quiros/qa/jenkinsPipeline'
-  }
   stages {
     stage('Build') {
       parallel {
@@ -24,9 +21,13 @@ pipeline {
 
     stage('Deployment') {
       steps {
-        echo 'Deploying to AWS'
+        input(message: 'Quieres deployar?', id: 'OK')
+        echo 'Deployed to AWS'
       }
     }
 
+  }
+  environment {
+    chromeDriverPath = '/Users/jorge.quiros/qa/jenkinsPipeline'
   }
 }
