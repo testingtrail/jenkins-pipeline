@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'testing our app'
+            echo 'Chromedriver path is ${chromeDriverPath}'
           }
         }
 
@@ -24,5 +25,8 @@ pipeline {
       }
     }
 
+  }
+  environment{
+    chromeDriverPath = '/Users/jorge.quiros/qa/jenkinsPipeline'
   }
 }

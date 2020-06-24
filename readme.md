@@ -12,3 +12,11 @@ JENKINS AS PIPELINE
 5. Create some dummy stages with steps of type 'print message' and save it. It will as you to save pipeline in the github repository.
 
 6. Pipeline will run and then if you go to github you will see the Jenkinsfile automatically created!!
+
+Declarative pipeline
+--------------------
+
+This is a recent add to Jenkins where there is a more simplified and optimize sintax on top of the Pipeline. It is written inside a Jenkins file. 
+
+you can see more in the Jenkins page [here](https://www.jenkins.io/doc/book/pipeline/syntax/#:~:text=The%20basic%20statements%20and%20expressions,be%20on%20its%20own%20line.)
+
