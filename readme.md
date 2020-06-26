@@ -20,3 +20,13 @@ This is a recent add to Jenkins where there is a more simplified and optimize si
 
 you can see more in the Jenkins page [here](https://www.jenkins.io/doc/book/pipeline/syntax/#:~:text=The%20basic%20statements%20and%20expressions,be%20on%20its%20own%20line.)
 
+ Creating files and archiving them
+---------------------------------
+
+You can create a log file for instance and save it within your pipeline.
+
+1. Go to any step, let's say test and create a new stage with any any of type 'write file to the workspace'
+
+2. choose any name and also some text
+
+3. Then create a new stage called 'Artifacts' of type 'archiveartifacts' and put the name of the file you created above. Then when you build, in the 'Artifacts' tab you will be able to see your file in there.
