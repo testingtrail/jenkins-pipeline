@@ -27,7 +27,7 @@ pipeline {
 
     stage('Deployment') {
       parallel {
-        stage('Deployment') {
+        stage('Deployment2') {
           steps {
             input(message: 'Quieres deployar?', id: 'OK')
             echo 'Deployed to AWS'
