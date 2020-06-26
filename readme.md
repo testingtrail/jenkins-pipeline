@@ -30,3 +30,17 @@ You can create a log file for instance and save it within your pipeline.
 2. choose any name and also some text
 
 3. Then create a new stage called 'Artifacts' of type 'archiveartifacts' and put the name of the file you created above. Then when you build, in the 'Artifacts' tab you will be able to see your file in there.
+
+ Creating conditionals
+---------------------------------
+You can create conditionals in your code so you can decide whether to run something or not.
+
+1. Create a branch development and in the jenkinsfile add this before the stage to run
+
+```
+when{
+    branch 'master'
+}
+```
+
+2. After commit and push, go to the pipeline in Jenkins and try to run it
