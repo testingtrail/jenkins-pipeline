@@ -44,3 +44,13 @@ when{
 ```
 
 2. After commit and push, go to the pipeline in Jenkins and try to run it
+
+
+ Validate Jenkins file plugin
+---------------------------------
+
+1. Download 'Jenkins pipeline linter connector' to validate 
+
+2. Then just hit Shift + Command + P (MAC) to show the command palette and look for 'jenkins validate'
+
+3. 
