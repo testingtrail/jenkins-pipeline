@@ -52,5 +52,3 @@ when{
 1. Download 'Jenkins pipeline linter connector' to validate 
 
 2. Then just hit Shift + Command + P (MAC) to show the command palette and look for 'jenkins validate'
-
-3. 
