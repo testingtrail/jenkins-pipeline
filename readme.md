@@ -1,17 +1,25 @@
-JENKINS AS PIPELINE
+PIPELINE AS CODE WITH JENKINS
 ===================
 
-1. First we are going to create a repo on github to save our project
+Setting up!
+-----------
+
+1. First we are going to create a repo on github to save our project. Remember that the jenkinsfile will be in the root of your project's code. Clone that repo into your code folder and open visual code.
 
 2. Install Jenkins (dekstop or in container) and go to manage plugins and install 'Blue Ocean'
+    1. If using jenkins container make sure youhave docker installed and then run the command that is in Jenkins for docker here: https://github.com/jenkinsci/docker/blob/master/README.md
 
-3. Activate Blue Ocen for left menu and create new pipeline, choose Github as repository for code
+3. Activate Blue Ocean for left menu and create new pipeline, choose Github as repository for code
 
-4. Go to Settings -> developer settings on Github and create an access token and paste it in Jenkins when ask for it. then choose the repository
+4. Go to Settings -> developer settings on Github and create an access token and paste it in Jenkins when ask for it. then choose the repository.
 
-5. Create some dummy stages with steps of type 'print message' and save it. It will as you to save pipeline in the github repository.
+![Connecting Github to pipeline](images/image1.png)
 
-6. Pipeline will run and then if you go to github you will see the Jenkinsfile automatically created!!
+5. Create some dummy stages with steps of type 'print message', this is the pipeline editor, it allows to do the same as you can do directly on a Jenkinsfile. Save the pipeline, you can choose when you save if commit to master or to another branch, it will create a pipeline file in the github repository. 
+
+![Connecting Github to pipeline](images/image2.png)
+
+6. Run the Pipeline. Go to github you will see the Jenkinsfile automatically created!!
 
 Declarative pipeline
 --------------------
