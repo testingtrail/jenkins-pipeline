@@ -17,7 +17,7 @@ pipeline {
         }
 
         stage('Test.Log') {
-          environment{
+          environment {
             localvariable = 'Hello'
           }
           steps {
@@ -36,7 +36,7 @@ pipeline {
         stage('Deployment') {
           steps {
             input(message: 'Quieres deployar?', id: 'OK')
-            echo 'Deployed to AWS'
+            echo 'Deployed to AWS in develop'
           }
         }
 
