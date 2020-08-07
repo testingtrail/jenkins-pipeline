@@ -41,19 +41,21 @@ You can create a log file for instance and save it within your pipeline.
 
 4. Then when you build, in the 'Artifacts' tab you will be able to see your file in there.
 
+5. Also you can create something like this to send variables locals and globals
+
+writeFile(file: 'LogFile.txt', text: "This is a log file. The driver path is ${chromeDriverPath} and local variable is ${localvariable}")
+
  Creating conditionals
 ---------------------------------
 You can create conditionals in your code so you can decide whether to run something or not.
 
-1. Create a branch development and in the jenkinsfile add this before the stage to run
+1. Create a branch 'develop' and in the jenkinsfile add this before the stage to run
 
-```
-when{
-    branch 'master'
-}
-```
+![Conditionals](images/image4.png)
 
-2. After commit and push, go to the pipeline in Jenkins and try to run it
+2. After commit and push, go to the pipeline in Jenkins and try to run it from the develop branch. You will see that step is skipped from develop branch as it was meant to do that in the jenkinsfile
+
+![Skipping stages](images/image3.png)
 
 
  Validate Jenkins file plugin
