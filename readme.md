@@ -63,4 +63,6 @@ You can create conditionals in your code so you can decide whether to run someth
 
 1. Download 'Jenkins pipeline linter connector' to validate 
 
+2. You have to go to the documentation of the plugin so we may see how to configure your Jenkins, all steps are in there
+
 2. Then just hit Shift + Command + P (MAC) to show the command palette and look for 'jenkins validate'
