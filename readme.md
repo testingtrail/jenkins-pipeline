@@ -35,9 +35,11 @@ You can create a log file for instance and save it within your pipeline.
 
 1. Go to any step, let's say test and create a new stage with any any of type 'write file to the workspace'
 
-2. choose any name and also some text
+2. choose any name and also some text. 
 
-3. Then create a new stage called 'Artifacts' of type 'archiveartifacts' and put the name of the file you created above. Then when you build, in the 'Artifacts' tab you will be able to see your file in there.
+3. Then create a new stage called 'Artifacts' of type 'archiveartifacts' and put the name of the file you created above. 
+
+4. Then when you build, in the 'Artifacts' tab you will be able to see your file in there.
 
  Creating conditionals
 ---------------------------------
