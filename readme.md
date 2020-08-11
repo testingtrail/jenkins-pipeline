@@ -65,4 +65,20 @@ You can create conditionals in your code so you can decide whether to run someth
 
 2. You have to go to the documentation of the plugin so we may see how to configure your Jenkins, all steps are in there
 
-2. Then just hit Shift + Command + P (MAC) to show the command palette and look for 'jenkins validate'
+3. Then just hit Shift + Command + P (MAC) to show the command palette and look for 'jenkins validate'
+
+
+ Multibranch pipeline
+---------------------------------
+
+The multibranch pipeline type project enables you to implement different Jenkinfiles for different branches of the same project. this eliminates the need for manual pipeline creation and management. 
+
+1. Go to Jenkins -> new multi branch pipeline -> put any name
+
+2. select a display name
+
+3. In branch source choose any github repo with two branches minimun, like this very same repo and choose 'Git', not 'Github' in the branch source. 
+
+![Choosing repo](images/image5.png)
+
+4. Now, if you save you will see it will start running for both of your pipelines. 
